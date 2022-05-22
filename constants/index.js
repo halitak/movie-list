@@ -18,8 +18,6 @@ export const filterInputs = [
   },
 ];
 
-export const API = "https://www.omdbapi.com/?apikey=5e87529";
-
 export const MovieListKeys = ["Title", "Year", "imdbID", "Type"];
 
 export const MovieDetailKeys = [

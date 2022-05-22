@@ -2,8 +2,8 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import styles from "../../styles/Detail.module.css";
 import Layout from "../../components/Layout";
-import { MovieDetailKeys } from "../../constants";
-import FetchMovie from "../../helper/fetch";
+import { MovieDetailKeys } from "../../Constants";
+import FetchMovie from "../../Helper/Fetch";
 import Image from "next/image";
 
 export default function Product() {

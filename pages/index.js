@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import Filter from "../components/Filter";
 import Table from "../components/Table";
 import Pagination from "../components/Pagination";
-import FetchMovie from "../helper/fetch";
+import FetchMovie from "../Helper/Fetch";
 
 export default function Home() {
   const [movies, setMovies] = useState({
