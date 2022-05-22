@@ -1,0 +1,18 @@
+.pagination {
+  @apply flex flex-col;
+  &__result {
+    @apply mt-1 font-medium;
+    span:first-child {
+      @apply mr-1;
+    }
+  }
+  &__inner {
+    @apply flex flex-wrap gap-1;
+  }
+  &__item {
+    @apply hover:bg-slate-100 h-10 w-10 rounded font-medium;
+    &--active {
+      @apply bg-slate-200 hover:bg-slate-200;
+    }
+  }
+}

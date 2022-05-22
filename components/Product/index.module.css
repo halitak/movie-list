@@ -1,0 +1,10 @@
+.product {
+  &__image {
+    img {
+    }
+  }
+  &__info {
+  }
+  &__title {
+  }
+}

@@ -1,0 +1,24 @@
+.movie {
+  &__status {
+  }
+  &__grid {
+    @apply flex gap-8 flex-col sm:flex-row;
+  }
+  &__image {
+    @apply flex justify-center items-center shrink-0;
+  }
+  &__info {
+    @apply flex flex-col;
+  }
+  &__title {
+    @apply text-2xl font-medium;
+  }
+  &__detail {
+    span:first-child {
+      @apply font-medium mr-1;
+    }
+  }
+  &__plot {
+    @apply mt-4 text-lg;
+  }
+}

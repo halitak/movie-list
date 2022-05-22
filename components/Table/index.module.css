@@ -1,0 +1,21 @@
+.table {
+  @apply w-full;
+  th,
+  caption {
+    @apply text-left font-medium;
+  }
+  tr {
+    @apply h-8;
+  }
+  tbody {
+    tr {
+      @apply hover:bg-slate-50;
+    }
+  }
+  tr a {
+    @apply block;
+  }
+  &__wrapper {
+    @apply overflow-x-auto;
+  }
+}

@@ -1,0 +1,9 @@
+.layout {
+  @apply min-h-screen flex flex-col;
+}
+.main {
+  @apply flex-1 p-4;
+}
+.container {
+  @apply max-w-7xl mx-auto flex flex-col gap-8;
+}

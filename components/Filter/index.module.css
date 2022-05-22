@@ -1,0 +1,9 @@
+.filter {
+  @apply flex flex-col sm:flex-row gap-2;
+  &__button {
+    @apply border-2 rounded h-10 font-medium px-4;
+  }
+  &__clear {
+    @apply font-medium px-2;
+  }
+}
