@@ -1,10 +1,10 @@
 import styles from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
-import Layout from "../components/Layout";
-import Filter from "../components/Filter";
-import Table from "../components/Table";
-import Pagination from "../components/Pagination";
-import FetchMovie from "../Helper/Fetch";
+import Layout from "../components/layout";
+import Filter from "../components/filter";
+import Table from "../components/table";
+import Pagination from "../components/pagination";
+import { fetchMovie } from "../helper";
 
 export default function Home() {
   const [movies, setMovies] = useState({
@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       const paramsString = new URLSearchParams(clearObject(params)).toString();
-      const json = await FetchMovie(paramsString);
+      const json = await fetchMovie(paramsString);
       if (json.Response === "False") {
         setMovies({ loading: false, error: json.Error, data: [] });
       } else {

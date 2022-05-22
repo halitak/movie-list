@@ -1,7 +1,7 @@
 import styles from "./index.module.css";
 
 export default function Input({ children, ...props }) {
-  const { name, placeholder, type, options } = props;
+  const { type, options } = props;
   return type === "text" ? (
     <input {...props} className={styles.input} />
   ) : type === "select" ? (

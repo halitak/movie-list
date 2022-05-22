@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
-import Input from "../Input";
-import { filterInputs } from "../../Constants";
+import Input from "../input";
+import { filterInputs } from "../../constants";
 
 export default function Filter({ handleFilter }) {
   return (

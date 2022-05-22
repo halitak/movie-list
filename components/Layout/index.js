@@ -1,7 +1,7 @@
-import Header from "../Header";
+import Header from "../header";
 import styles from "./index.module.css";
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   return (
     <div className={styles.layout}>
       <Header />
@@ -10,4 +10,6 @@ export default function Layout({ children }) {
       </main>
     </div>
   );
-}
+};
+
+export default Layout;

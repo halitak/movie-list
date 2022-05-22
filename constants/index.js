@@ -18,9 +18,7 @@ export const filterInputs = [
   },
 ];
 
-export const MovieListKeys = ["Title", "Year", "imdbID", "Type"];
-
-export const MovieDetailKeys = [
+export const movieDetailKeys = [
   "Title",
   "Year",
   "Released",

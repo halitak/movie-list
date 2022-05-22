@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
-import styles from "../../styles/Detail.module.css";
-import Layout from "../../components/Layout";
-import { MovieDetailKeys } from "../../Constants";
-import FetchMovie from "../../Helper/Fetch";
+import styles from "../../styles/detail.module.css";
+import Layout from "../../components/layout";
+import { movieDetailKeys } from "../../constants";
+import { fetchMovie } from "../../helper";
 import Image from "next/image";
 
 export default function Product() {
@@ -17,7 +17,7 @@ export default function Product() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const json = await FetchMovie(`plot=full&i=${slug}`);
+      const json = await fetchMovie(`plot=full&i=${slug}`);
       if (json.Response === "False") {
         setMovie({ loading: false, error: json.Error, data: [] });
       } else {
@@ -49,7 +49,7 @@ export default function Product() {
               </div>
               <div className={styles.movie__info}>
                 <h1 className={styles.movie__title}>{movie.data.Title}</h1>
-                {MovieDetailKeys.map((key, index) => {
+                {movieDetailKeys.map((key, index) => {
                   return key === "Ratings" ? (
                     movie.data[key].map((item, index2) => {
                       return (
